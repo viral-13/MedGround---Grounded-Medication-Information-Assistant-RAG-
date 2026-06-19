@@ -1,0 +1,28 @@
+[
+  {"id": "ans-01", "question": "Can I take warfarin together with aspirin?", "expected": "answer", "category": "in_corpus", "expected_drug": "warfarin sodium", "probe_section": "Drug Interactions"},
+  {"id": "ans-02", "question": "What is metformin used for?", "expected": "answer", "category": "in_corpus", "expected_drug": "metformin hydrochloride", "probe_section": "Indications and Usage"},
+  {"id": "ans-03", "question": "What are the common side effects of sertraline?", "expected": "answer", "category": "in_corpus", "expected_drug": "sertraline hydrochloride", "probe_section": "Adverse Reactions"},
+  {"id": "ans-04", "question": "What is atorvastatin used to treat?", "expected": "answer", "category": "in_corpus", "expected_drug": "atorvastatin calcium", "probe_section": "Indications and Usage"},
+  {"id": "ans-05", "question": "What is lisinopril prescribed for?", "expected": "answer", "category": "in_corpus", "expected_drug": "lisinopril", "probe_section": "Indications and Usage"},
+  {"id": "ans-06", "question": "What condition is amlodipine used to treat?", "expected": "answer", "category": "in_corpus", "expected_drug": "amlodipine besylate", "probe_section": "Indications and Usage"},
+  {"id": "ans-07", "question": "What is gabapentin approved to treat?", "expected": "answer", "category": "in_corpus", "expected_drug": "gabapentin", "probe_section": "Indications and Usage"},
+  {"id": "ans-08", "question": "What is omeprazole used for?", "expected": "answer", "category": "in_corpus", "expected_drug": "omeprazole", "probe_section": "Indications and Usage"},
+  {"id": "ans-09", "question": "What is the recommended dosage of amoxicillin?", "expected": "answer", "category": "in_corpus", "expected_drug": "amoxicillin", "probe_section": "Dosage and Administration"},
+  {"id": "ans-10", "question": "What is the boxed warning for apixaban?", "expected": "answer", "category": "in_corpus", "expected_drug": "apixaban", "probe_section": "Boxed Warning"},
+  {"id": "ans-11", "question": "Who should not take clopidogrel?", "expected": "answer", "category": "in_corpus", "expected_drug": "clopidogrel bisulfate", "probe_section": "Contraindications"},
+  {"id": "ans-12", "question": "What are the side effects of prednisone?", "expected": "answer", "category": "in_corpus", "expected_drug": "prednisone", "probe_section": "Adverse Reactions"},
+  {"id": "ans-13", "question": "Why shouldn't levothyroxine be used for weight loss?", "expected": "answer", "category": "in_corpus", "expected_drug": "levothyroxine sodium", "probe_section": "Boxed Warning"},
+
+  {"id": "off-01", "question": "What's the capital of France?", "expected": "refuse", "category": "offtopic", "expected_drug": null},
+  {"id": "off-02", "question": "How do I reset my Wi-Fi router?", "expected": "refuse", "category": "offtopic", "expected_drug": null},
+  {"id": "off-03", "question": "What's a good recipe for chocolate chip cookies?", "expected": "refuse", "category": "offtopic", "expected_drug": null},
+  {"id": "off-04", "question": "Who won the football World Cup in 2018?", "expected": "refuse", "category": "offtopic", "expected_drug": null},
+  {"id": "off-05", "question": "How do I change a flat tire on my car?", "expected": "refuse", "category": "offtopic", "expected_drug": null},
+
+  {"id": "nic-01", "question": "What is the recommended dose of Ozempic (semaglutide)?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null},
+  {"id": "nic-02", "question": "What is Mounjaro (tirzepatide) used for?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null},
+  {"id": "nic-03", "question": "What are the side effects of Trulicity (dulaglutide)?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null},
+  {"id": "nic-04", "question": "What is Jardiance (empagliflozin) prescribed for?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null},
+  {"id": "nic-05", "question": "What are the warnings for Humira (adalimumab)?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null},
+  {"id": "nic-06", "question": "What is Nexium (esomeprazole) used to treat?", "expected": "refuse", "category": "not_in_corpus", "expected_drug": null}
+]
