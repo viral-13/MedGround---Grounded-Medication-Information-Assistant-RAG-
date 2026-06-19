@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Generated artifacts - rebuild with `python ingest_openfda.py` + `python build_index.py`
+/data/corpus.json
+/index/

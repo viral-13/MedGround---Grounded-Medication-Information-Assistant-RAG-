@@ -22,12 +22,35 @@ A normal chatbot answers from memory and will confidently invent a drug dose. Me
 
 ## Demo
 
-> _Add a screen recording / GIF of the Streamlit UI here._
+<!-- TODO: add a screen recording / GIF of the Streamlit UI here -->
 
-Two example interactions:
+Two example interactions (CLI; the Streamlit UI shows the same answer, citations, and a "How it decided" panel):
 
-- **“Can I take warfarin with aspirin?”** → a grounded answer with four DailyMed citations.
-- **“What is the recommended dose of Ozempic?”** → **refused** — Ozempic isn’t in the corpus, so the system declines rather than guess.
+```text
+$ python rag.py --ask "Can I take warfarin with aspirin?"
+top retrieval score: 0.623  (threshold 0.4) -> ANSWERED
+
+For high-risk patients post-myocardial infarction, combined moderate-intensity
+warfarin (INR 2-3) plus low-dose aspirin (<= 100 mg/day) is recommended for at
+least 3 months [Warfarin Sodium - Dosage and Administration]. Concurrent use can
+increase bleeding risk, so patients should be monitored [Naproxen - Drug
+Interactions]. This is reference information from drug labels, not medical advice.
+
+Sources:
+  - Warfarin Sodium -> Dosage and Administration   (dailymed.nlm.nih.gov/...)
+  - Naproxen -> Drug Interactions                  (dailymed.nlm.nih.gov/...)
+```
+
+```text
+$ python rag.py --ask "What is the recommended dose of Ozempic?"
+top retrieval score: 0.601  (threshold 0.4) -> REFUSED
+
+I don't have grounded information on that in my drug-label sources, so I can't
+answer it.
+```
+
+- **“Can I take warfarin with aspirin?”** → a grounded answer with DailyMed citations.
+- **“What is the recommended dose of Ozempic?”** → **refused** — Ozempic isn’t in the corpus, so the system declines rather than guess (it scores *above* the retrieval gate, then the grounded self-refusal catches it).
 
 ---
 
